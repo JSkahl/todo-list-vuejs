@@ -1,35 +1,32 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root{
+  --background-color: #242a2e;
 
-  font-weight: normal;
+  --primary-blue: #7d9c9a;
+  --secondary-blue: #c7faf7;
+  --tertiary-blue: #576d6b;
+  
+  --primary-orange: #ff7b00;
+  --secondary-orange: #db6a00;
+  --tertiary-orange: #9e4c00;
+  --quaternary-orange: #612f00;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+html {
+  font-size: 62.5%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--background-color);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+body {
+  height: 100%;
 }
