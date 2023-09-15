@@ -1,17 +1,46 @@
-<script setup>
+<script>
+
+export default {
+  data() {
+    return {
+      mostrarTarefa: false
+    };
+  },
+  methods: {
+    adicionarTarefa() {
+      this.mostrarTarefa = true;
+    }
+  }
+};
+
 </script>
 
 <template>
 <main>
   <div class="titulo">
-    <h1>Lista de afazeres</h1>
+    <h1>Lista de tarefas</h1>
   </div>
   <div class="formulario">
     <input 
     type="text" 
     class="texto"
     placeholder="Insira sua nova tarefa...">
-    <button type="submit">Enviar</button>
+    <button @click="adicionarTarefa">Enviar</button>
+    
+  </div>
+
+  <div class="adicionarTarefa">
+    <input type="checkbox">
+
+    <div class="textoTarefa">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="botoesTarefa">
+      <button class="apagarTarefa">Apagar</button>
+      <button class="editarTarefa">Editar</button>
+    </div>
+
   </div>
 
 </main>
@@ -31,7 +60,7 @@ main {
 
 .titulo {
   background-color: var(--cinza-fab);
-  width: 400px;
+  width: 500px;
   height: 40px;
   display: flex;
   border-radius: 15px 15px 0px 0px;
@@ -44,7 +73,7 @@ main {
 }
 
 .formulario {
-  width: 400px;
+  width: 500px;
   height: 70px;
   background-color: var(--branco-fab);
   display: flex;
@@ -67,7 +96,7 @@ main {
   background-color: var(--branco-fab);
 }
 
-.formulario > button {
+button {
   width: 60px;
   height:  30px;
   border-radius: 10px;
@@ -76,8 +105,61 @@ main {
   color: var(--branco-fab);
   font-weight: bold;
 }
-.formulario > button:hover {
+
+button:hover {
   background-color: var(--laranja-escuro)
+}
+
+.adicionarTarefa {
+  width: 500px;
+  height: 80px;
+  background-color: var(--branco-fab);
+  margin-top: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: col;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+.textoTarefa {
+
+  width: 400px;
+  height: 74px;
+  margin: auto;
+  margin: auto 10px auto 10px;
+}
+
+.botoesTarefa {
+  display: flex;
+  margin: auto;
+  margin-right: 10px;
+  flex-direction: column;
+}
+
+.botoesTarefa > button {
+  margin: 5px;
+}
+
+.editarTarefa {
+  background-color: var(--ciano-fab);
+}
+
+.editarTarefa:hover {
+  background-color: var(--ciano-escuro);
+}
+
+.apagarTarefa {
+  background-color: var(--vermelho-fab);
+}
+
+.apagarTarefa:hover {
+  background-color: var(--vermelho-escuro);
+}
+
+.adicionarTarefa > input {
+  width: 20px;
+  margin-left: 10px;
 }
 
 </style>

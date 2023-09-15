@@ -4,10 +4,18 @@
   --branco-fab: #f1f1f1;
   --cinza-fab: #bbc9c9;
   --preto-fab: #22272e;
-  --ciano-fab: #267a7a;
   --laranja-fab: #ff8b3f;
   --laranja-claro: #f79858;
   --laranja-escuro: #cc7032;
+  --ciano-fab: #267a7a;
+  --ciano-claro: #5aa5a5;
+  --ciano-escuro: #154444;
+  --azul-fab: #4c4af4;
+  --azul-claro: #8785f1;
+  --azul-escuro: #312fa8;
+  --vermelho-fab: #d44f4c;
+  --vermelho-claro: #d4908f;
+  --vermelho-escuro: #9c3837;
 }
 
 * {
