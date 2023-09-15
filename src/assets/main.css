@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 :root{
-  --background-color: #242a2e;
-
-  --primary-blue: #7d9c9a;
-  --secondary-blue: #c7faf7;
-  --tertiary-blue: #576d6b;
-  
-  --primary-orange: #ff7b00;
-  --secondary-orange: #db6a00;
-  --tertiary-orange: #9e4c00;
-  --quaternary-orange: #612f00;
+  --branco-fab: #f1f1f1;
+  --cinza-fab: #bbc9c9;
+  --preto-fab: #22272e;
+  --ciano-fab: #267a7a;
+  --laranja-fab: #ff8b3f;
+  --laranja-claro: #f79858;
+  --laranja-escuro: #cc7032;
 }
 
 * {
@@ -24,7 +21,7 @@ html {
   height: 100%;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  background-color: var(--background-color);
+  background-color: var(--preto-fab);
 }
 
 body {

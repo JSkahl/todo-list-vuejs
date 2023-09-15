@@ -30,7 +30,7 @@ main {
 }
 
 .titulo {
-  background-color: var(--secondary-blue);
+  background-color: var(--cinza-fab);
   width: 400px;
   height: 40px;
   display: flex;
@@ -46,7 +46,7 @@ main {
 .formulario {
   width: 400px;
   height: 70px;
-  background-color: var(--primary-blue);
+  background-color: var(--branco-fab);
   display: flex;
   justify-content: space-evenly;
   border-radius: 0px 0px 15px 15px;
@@ -55,31 +55,29 @@ main {
 }
 
 .formulario > input {
-  background-color: transparent;
-  border: 2px var(--tertiary-blue) solid;
+  border: 2px var(--laranja-fab) solid;
   border-radius: 10px;
   width: 250px;
   height: 30px;
   outline: none;
-  background-color: rgb(212, 255, 255);
   padding: 0px 10px 0px 10px
 }
 
 .formulario > input:hover {
-  background-color: rgb(176, 218, 218);
+  background-color: var(--branco-fab);
 }
 
 .formulario > button {
   width: 60px;
   height:  30px;
   border-radius: 10px;
-  background-color: var(--primary-orange);
-  border: 2px var(--secondary-orange) solid;
-  color: aliceblue;
+  background-color: var(--laranja-fab);
+  border: none;
+  color: var(--branco-fab);
   font-weight: bold;
 }
 .formulario > button:hover {
-  background-color: var(--tertiary-orange)
+  background-color: var(--laranja-escuro)
 }
 
 </style>
